@@ -1,6 +1,6 @@
 name             'npm'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
+maintainer       'Joe Stump'
+maintainer_email 'joe@joestump.net'
 license          'All rights reserved'
 description      'Installs/Configures npm'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
