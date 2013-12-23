@@ -4,6 +4,7 @@ action :install do
   execute "install NPM package #{new_resource.name}" do
     command cmd
   end
+  new_resource.updated_by_last_action(true)
 end
 
 action :install_local do
@@ -14,6 +15,7 @@ action :install_local do
     cwd path
     command cmd
   end
+  new_resource.updated_by_last_action(true)
 end
 
 action :uninstall do
@@ -22,6 +24,7 @@ action :uninstall do
   execute "uninstall NPM package #{new_resource.name}" do
     command cmd
   end
+  new_resource.updated_by_last_action(true)
 end
 
 action :uninstall_local do
@@ -32,4 +35,5 @@ action :uninstall_local do
     cwd path
     command cmd
   end
+  new_resource.updated_by_last_action(true)
 end
