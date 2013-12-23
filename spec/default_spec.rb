@@ -9,4 +9,8 @@ describe 'npm::default' do
   it 'should include the nodejs recipe' do
     expect(chef_run).to include_recipe('nodejs')
   end
+
+  it 'should install the npm package' do
+    expect(chef_run).to install_package('npm')
+  end
 end
