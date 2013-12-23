@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tvdinner/npm.png?branch=master)](https://travis-ci.org/tvdinner/npm)
+
 # npm cookbook
 
 # Requirements
